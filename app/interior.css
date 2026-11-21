@@ -1,0 +1,224 @@
+/* Shared navigation and chrome styles */
+.site-header {
+  gap: 20px;
+}
+.site-header .desktop-nav {
+  gap: 22px;
+  margin-right: 22px;
+}
+.site-header .desktop-nav a {
+  font-size: 11px;
+}
+.site-header a[aria-current="page"]:after {
+  transform: scaleX(1);
+}
+@media (max-width: 960px) {
+  .site-header .desktop-nav,
+  .site-header .header-cta {
+    display: none;
+  }
+  .site-header .menu-toggle {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: transparent;
+    font-size: 12px;
+    padding: 10px 0;
+    color: inherit;
+  }
+  .site-header .menu-toggle span {
+    font-size: 23px;
+  }
+}
+.footer-button {
+  background: none;
+  border: 0;
+  padding: 0;
+  font-size: inherit;
+  text-align: left;
+  color: inherit;
+  cursor: pointer;
+}
+.footer-top .footer-button {
+  font-size: 11px;
+}
+.menu-dialog {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 25px;
+  background: var(--color-ink);
+  color: var(--color-ivory);
+  border: 0;
+  overflow-y: auto;
+}
+.menu-dialog::backdrop {
+  background: var(--color-ink);
+}
+.menu-dialog-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-border-on-dark);
+  padding-bottom: 25px;
+}
+.menu-dialog-top button {
+  background: none;
+  font-size: 13px;
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+}
+.menu-dialog nav {
+  padding-top: 20px;
+}
+.menu-dialog nav > a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid #92a29733;
+  font-size: 28px;
+  letter-spacing: -0.04em;
+  color: inherit;
+  text-decoration: none;
+}
+.menu-dialog small {
+  font-size: 9px;
+  color: var(--color-sage);
+}
+.menu-dialog svg {
+  margin-left: auto;
+}
+.menu-dialog .mobile-book {
+  font-size: 19px;
+  color: var(--color-sage);
+}
+.menu-dialog > p {
+  font-size: 11px;
+  color: var(--color-sage);
+  margin-top: 30px;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.settings-dialog {
+  background: var(--color-ivory);
+  color: var(--color-forest);
+  border: 1px solid var(--color-border);
+  max-width: 550px;
+  width: calc(100% - 40px);
+  padding: 35px;
+  box-shadow: var(--shadow-dialog);
+}
+.settings-dialog::backdrop {
+  background: #0f1512bb;
+  backdrop-filter: blur(5px);
+}
+.settings-dialog h2 {
+  font-size: 35px;
+}
+.settings-dialog > p:not(.eyebrow) {
+  font-size: 12px;
+  margin: 25px 0;
+  color: #60715b;
+}
+.dialog-close {
+  position: absolute;
+  right: 18px;
+  top: 13px;
+  background: none;
+  border: 0;
+  font-size: 25px;
+  cursor: pointer;
+  color: inherit;
+}
+.setting-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+  border-top: 1px solid var(--color-border);
+  padding: 20px 0;
+  font-size: 11px;
+}
+.setting-row p {
+  font-size: 11px;
+  color: #6a7a64;
+  margin-top: 8px;
+}
+.setting-row > span {
+  white-space: nowrap;
+}
+.form-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px;
+  background: var(--color-forest);
+  color: var(--color-ivory);
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition:
+    background var(--duration-normal),
+    transform var(--duration-normal);
+}
+.form-button:hover {
+  background: var(--color-ink);
+}
+
+.site main > .intro,
+.site main > .coverage,
+.site main > .solutions,
+.site main > .human,
+.site main > .process,
+.site main > .industries,
+.site main > .partners,
+.site main > .resources,
+.site main > .faq {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 700px;
+}
+picture {
+  display: contents;
+}
+
+@media (max-width: 760px) {
+  .settings-dialog {
+    padding: 30px 23px;
+  }
+  .settings-dialog h2 {
+    font-size: 31px;
+  }
+  .footer-bottom > div {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .footer-top .footer-button {
+    font-size: 10px;
+  }
+  .footer-top > div:nth-child(4) .back-top {
+    margin-top: 0;
+  }
+  .menu-dialog nav > a {
+    font-size: 24px;
+    padding: 15px 0;
+  }
+  .menu-dialog > p {
+    margin-top: 25px;
+  }
+}

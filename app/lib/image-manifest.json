@@ -1,0 +1,158 @@
+{
+  "/images/architecture.jpg": {
+    "width": 2200,
+    "height": 1075,
+    "variants": [
+      {
+        "width": 400,
+        "webp": "/images/optimized/architecture-400.webp",
+        "avif": "/images/optimized/architecture-400.avif"
+      },
+      {
+        "width": 800,
+        "webp": "/images/optimized/architecture-800.webp",
+        "avif": "/images/optimized/architecture-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "/images/optimized/architecture-1200.webp",
+        "avif": "/images/optimized/architecture-1200.avif"
+      },
+      {
+        "width": 1800,
+        "webp": "/images/optimized/architecture-1800.webp",
+        "avif": "/images/optimized/architecture-1800.avif"
+      }
+    ]
+  },
+  "/images/stock-collaboration.jpg": {
+    "width": 1800,
+    "height": 1201,
+    "variants": [
+      {
+        "width": 400,
+        "webp": "/images/optimized/stock-collaboration-400.webp",
+        "avif": "/images/optimized/stock-collaboration-400.avif"
+      },
+      {
+        "width": 800,
+        "webp": "/images/optimized/stock-collaboration-800.webp",
+        "avif": "/images/optimized/stock-collaboration-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "/images/optimized/stock-collaboration-1200.webp",
+        "avif": "/images/optimized/stock-collaboration-1200.avif"
+      },
+      {
+        "width": 1800,
+        "webp": "/images/optimized/stock-collaboration-1800.webp",
+        "avif": "/images/optimized/stock-collaboration-1800.avif"
+      }
+    ]
+  },
+  "/images/stock-engineer.jpg": {
+    "width": 1800,
+    "height": 1201,
+    "variants": [
+      {
+        "width": 400,
+        "webp": "/images/optimized/stock-engineer-400.webp",
+        "avif": "/images/optimized/stock-engineer-400.avif"
+      },
+      {
+        "width": 800,
+        "webp": "/images/optimized/stock-engineer-800.webp",
+        "avif": "/images/optimized/stock-engineer-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "/images/optimized/stock-engineer-1200.webp",
+        "avif": "/images/optimized/stock-engineer-1200.avif"
+      },
+      {
+        "width": 1800,
+        "webp": "/images/optimized/stock-engineer-1800.webp",
+        "avif": "/images/optimized/stock-engineer-1800.avif"
+      }
+    ]
+  },
+  "/images/stock-healthcare.jpg": {
+    "width": 1800,
+    "height": 1173,
+    "variants": [
+      {
+        "width": 400,
+        "webp": "/images/optimized/stock-healthcare-400.webp",
+        "avif": "/images/optimized/stock-healthcare-400.avif"
+      },
+      {
+        "width": 800,
+        "webp": "/images/optimized/stock-healthcare-800.webp",
+        "avif": "/images/optimized/stock-healthcare-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "/images/optimized/stock-healthcare-1200.webp",
+        "avif": "/images/optimized/stock-healthcare-1200.avif"
+      },
+      {
+        "width": 1800,
+        "webp": "/images/optimized/stock-healthcare-1800.webp",
+        "avif": "/images/optimized/stock-healthcare-1800.avif"
+      }
+    ]
+  },
+  "/images/stock-hospitality.jpg": {
+    "width": 1800,
+    "height": 2700,
+    "variants": [
+      {
+        "width": 400,
+        "webp": "/images/optimized/stock-hospitality-400.webp",
+        "avif": "/images/optimized/stock-hospitality-400.avif"
+      },
+      {
+        "width": 800,
+        "webp": "/images/optimized/stock-hospitality-800.webp",
+        "avif": "/images/optimized/stock-hospitality-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "/images/optimized/stock-hospitality-1200.webp",
+        "avif": "/images/optimized/stock-hospitality-1200.avif"
+      },
+      {
+        "width": 1800,
+        "webp": "/images/optimized/stock-hospitality-1800.webp",
+        "avif": "/images/optimized/stock-hospitality-1800.avif"
+      }
+    ]
+  },
+  "/images/stock-meeting.jpg": {
+    "width": 1800,
+    "height": 1202,
+    "variants": [
+      {
+        "width": 400,
+        "webp": "/images/optimized/stock-meeting-400.webp",
+        "avif": "/images/optimized/stock-meeting-400.avif"
+      },
+      {
+        "width": 800,
+        "webp": "/images/optimized/stock-meeting-800.webp",
+        "avif": "/images/optimized/stock-meeting-800.avif"
+      },
+      {
+        "width": 1200,
+        "webp": "/images/optimized/stock-meeting-1200.webp",
+        "avif": "/images/optimized/stock-meeting-1200.avif"
+      },
+      {
+        "width": 1800,
+        "webp": "/images/optimized/stock-meeting-1800.webp",
+        "avif": "/images/optimized/stock-meeting-1800.avif"
+      }
+    ]
+  }
+}
