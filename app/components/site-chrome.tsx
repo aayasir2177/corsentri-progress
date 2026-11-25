@@ -1,16 +1,17 @@
 "use client";
+import Link from "next/link";
 import { ResponsiveImage } from "./responsive-image";
 import { useEffect, useRef, useState } from "react";
 import { Arrow } from "./ui";
 
 const links = [
-  ["Solutions", "#"],
+  ["Solutions", "/solutions"],
   ["Who we serve", "#"],
   ["MSP partners", "#"],
   ["About", "#"],
   ["Pricing", "#"],
   ["Resources", "#"],
-];
+] as const;
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -32,15 +33,13 @@ export function SiteHeader() {
     <>
       <a
         className="skip"
-        href="#"
-        onClick={(e) => e.preventDefault()}
+        href="#main"
       >
         Skip to content
       </a>
       <header className="header site-header">
-        <a
-          href="#"
-          onClick={(e) => e.preventDefault()}
+        <Link
+          href="/"
           className="logo"
           aria-label="CorSentri home"
         >
@@ -50,13 +49,12 @@ export function SiteHeader() {
             width="176"
             height="38"
           />
-        </a>
+        </Link>
         <nav className="desktop-nav" aria-label="Main navigation">
-          {links.map(([name]) => (
+          {links.map(([name, href]) => (
             <a
               key={name}
-              href="#"
-              onClick={(e) => e.preventDefault()}
+              href={href}
             >
               {name}
             </a>
@@ -87,10 +85,9 @@ export function SiteHeader() {
         aria-label="Navigation"
       >
         <div className="menu-dialog-top">
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
+          <Link
+            href="/"
+            onClick={() => {
               setOpen(false);
             }}
             aria-label="CorSentri home"
@@ -100,7 +97,7 @@ export function SiteHeader() {
               width="150"
               alt="CorSentri"
             />
-          </a>
+          </Link>
           <button
             onClick={() => {
               setOpen(false);
@@ -112,12 +109,12 @@ export function SiteHeader() {
           </button>
         </div>
         <nav aria-label="Mobile navigation">
-          {links.map(([name], i) => (
+          {links.map(([name, href], i) => (
             <a
               key={name}
-              href="#"
+              href={href}
               onClick={(e) => {
-                e.preventDefault();
+                if (href === "#") e.preventDefault();
                 setOpen(false);
               }}
             >
@@ -163,7 +160,15 @@ export function SiteEffects() {
     const handleGlobalClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement | null;
       const a = target?.closest("a");
-      if (a) {
+      if (!a) return;
+
+      const href = a.getAttribute("href") ?? "";
+      const isAppRoute = href === "/" || href === "/solutions";
+      const isExistingAnchor =
+        href.startsWith("#") && document.getElementById(href.slice(1));
+      const isExternalLink = /^(https?:|mailto:|tel:)/i.test(href);
+
+      if (!isAppRoute && !isExistingAnchor && !isExternalLink) {
         e.preventDefault();
       }
     };
@@ -191,9 +196,8 @@ export function SiteFooter() {
       <footer className="footer">
         <div className="footer-top">
           <div>
-            <a
-              href="#"
-              onClick={(e) => e.preventDefault()}
+            <Link
+              href="/"
               aria-label="CorSentri home"
             >
               <ResponsiveImage
@@ -203,7 +207,7 @@ export function SiteFooter() {
                 height="45"
                 alt="CorSentri"
               />
-            </a>
+            </Link>
             <p>
               Smarter security.
               <br />
